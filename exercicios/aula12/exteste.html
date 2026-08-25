@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de votos</h1>
+    <h2>Digite a sua idade</h2>
+    <input type="number" name="idade" id="idade"> :
+    <input type="button" value="verficar" onclick="clicar()" >
+    <div id="voto"></div>
+    
+
+
+<script>
+
+
+function clicar() {
+var idade = document.getElementById('idade')
+var voto = document.getElementById('voto')
+var ver = Number(idade.value)
+
+if (ver < 16 ) {
+    voto.innerText = `Nao vota`
+
+} else if (ver < 18 || ver > 65) {
+    voto.innerText = `Voto opcional`
+
+
+} else if (ver >= 18 && ver <= 65) {
+    voto.innerText = `Voto obrigatorio`
+
+}
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

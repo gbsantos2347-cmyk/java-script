@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos em dom</title>
+
+<style>
+
+div#area {
+background: rgb(1, 26, 110);
+color: white;
+width: 200px;
+height: 200px;
+line-height: 200px;
+text-align: center;
+font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+<!-- onmouseenter="entrar()" onmouseout="sair()" onclick="clicar()" -->
+
+
+<script>
+var area = document.querySelector('div#area')
+area.addEventListener('click', clicar)
+area.addEventListener('mouseenter', entrar)
+area.addEventListener('mouseout', sair)
+
+function clicar(){
+area.innerHTML  = 'Clicou!..'
+area.style.backgroundColor = 'red'
+
+}
+function entrar(){
+area.innerHTML  = 'Entrou!..'
+area.style.backgroundColor = 'green'
+}
+function sair(){
+area.innerHTML  = 'Saiu!..'
+area.style.backgroundColor = 'blue'
+}
+
+
+
+
+
+
+// onclick="clicar() serve para chamar a função clicar() quando o usuário clicar na div com id area. A função clicar() altera o conteúdo da div para 'Clicou!..' usando innerHTML.
+</script>
+</body>
+</html>

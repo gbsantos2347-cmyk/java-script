@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+button {
+
+height: 50px;
+width: 130px;
+
+
+
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Calculando o troco </h1>
+    <button onclick="clicar()">Comprar porduto</button>
+  
+
+
+<script>
+
+function clicar() {
+var produto = prompt('Qual o produto que voce esta comprando')
+var valor = Number(prompt('Quanto custa o valor do ' + produto + ' que voce esta comprando '))
+var valorpago = Number(prompt('Qual foi o valor pago pelo ' + produto))
+var troco = valor - valorpago
+alert(`Voce comprou o ${produto} que custou ${valor} . Deu ${valorpago} em dinheiro e vai receber ${troco} reais Volte sempre`)
+
+
+}
+
+</script>
+
+</body>
+</html>

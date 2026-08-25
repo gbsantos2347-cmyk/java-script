@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Dom</title>
+<style>
+
+body {background: rgb(55, 185, 207);
+font-family:Arial, Helvetica, sans-serif;
+color: rgb(0, 0, 0);
+
+}
+
+</style>
+</head>
+<body>
+    <h1>Aprendendo sobre dom</h1>
+    <p>Aqui vai o resultado </p>
+    <p>aprendendo a usar <strong>Dom</strong> em Js</p>
+    
+    <div id="msg">Clique aqui</div>
+<script>
+var corpo = document.body
+var p1 = document.getElementsByTagName('p')[1]
+// var d = document.getElementById('msg')
+// d.style.background = 'red'
+// d.innerText = 'Ele vira para julgar todos nos..... '
+
+
+var d = window.document.querySelector('div#msg')
+d.style.color = 'blue'
+
+
+
+
+
+// var p1 = document.getElementsByTagName('p')[1]
+// window.document.write('esta escrito assim :' + p1.innerText)
+// p1.style.color = 'blue'
+// muda o style da tag escolhida para outra de sua preferencia 
+
+// window.document.write('ola mundo')
+// ele escreve na tela
+
+
+</script>
+
+
+</body>
+</html>
