@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+button {
+height: 50px;
+width: 100px;
+}
+
+div#res1 {
+
+font-size: 20px;
+
+
+}
+div#res2 {
+
+font-size: 20px;
+
+
+}
+div#res3 {
+
+font-size: 20px;
+
+
+}
+div#res4 {
+
+font-size: 20px;
+
+}
+</style>
+</head>
+<body>
+    <h1>Conversos de medidas</h1>
+    <button onclick="clicar()">Converter</button>
+    <div id="res1">
+        <h2>Clique no botão para converter...</h2>
+    </div>
+    <div id="res2"></div>
+    <div id="res3"></div>
+    <div id="res4"></div>
+
+
+
+
+
+
+<script>
+
+function clicar() {
+var res1 = document.querySelector('div#res1')
+var res2 = document.querySelector('div#res2')
+var res3 = document.querySelector('div#res3')
+var res4 = document.querySelector('div#res4')
+
+
+var result = prompt('Digite uma distancia em metros ')
+var distancia = Number(result)
+
+var km =  distancia / 1000
+var cm =  distancia * 100  
+var mm =  distancia * 1000
+
+res1.innerHTML = `A distancia de ${distancia} metros  , corresponde a`
+
+
+res2.innerHTML = ` ${km} Quilometros `
+res3.innerHTML = ` ${cm} Centímetros `
+res4.innerHTML = ` ${mm} Milímetros `
+
+}
+
+</script>
+
+
+</body>
+</html>
